@@ -48,6 +48,7 @@ if ingredients_List:
     #ingredients_string= ingredients_string.strip()
     my_insert_stmt = """insert into smoothies.public.orders(ingredients,Name_on_order)
                 values ('"""+ingredients_string+"""','"""+Name_on_order+"""')"""
+    st.write("Selected ingredients list:", ingredients_string)
 
     #For check SQL and troubleshooting
     #st.write(my_insert_stmt)
