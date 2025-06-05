@@ -45,7 +45,7 @@ if ingredients_List:
 
     #Build a SQL Insert Statement & Test It
     my_insert_stmt = """insert into smoothies.public.orders(ingredients,Name_on_order)
-                values ('"""+trim(ingredients_string)+"""','"""+Name_on_order+"""')"""
+                values ('"""+strip(ingredients_string)+"""','"""+Name_on_order+"""')"""
 
     #For check SQL and troubleshooting
     #st.write(my_insert_stmt)
