@@ -51,7 +51,7 @@ if ingredients_List:
     st.write("Selected ingredients list:", ingredients_string)
 
     #For check SQL and troubleshooting
-    #st.write(my_insert_stmt)
+    st.write(my_insert_stmt)
     #st.stop
     ######
     
