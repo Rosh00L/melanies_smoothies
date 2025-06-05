@@ -44,7 +44,7 @@ if ingredients_List:
     #st.write(ingredients_string)
 
     #Build a SQL Insert Statement & Test It
-    Print(ingredients_string)
+   
     #ingredients_string= ingredients_string.strip()
     my_insert_stmt = """insert into smoothies.public.orders(ingredients,Name_on_order)
                 values ('"""+ingredients_string+"""','"""+Name_on_order+"""')"""
