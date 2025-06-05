@@ -32,7 +32,7 @@ if ingredients_List:
     ingredients_string =''
     
     for fruit_chosen in ingredients_List:
-        ingredients_string +=fruit_chosen + ''
+        ingredients_string+=fruit_chosen+''
 
         search_on=pd_df.loc[pd_df['FRUIT_NAME'] == fruit_chosen, 'SEARCH_ON'].iloc[0]
         st.write('The search value for ', fruit_chosen,' is ', search_on, '.')
@@ -44,8 +44,8 @@ if ingredients_List:
     #st.write(ingredients_string)
 
     #Build a SQL Insert Statement & Test It
-    my_insert_stmt = """ insert into smoothies.public.orders(ingredients,Name_on_order)
-            values ('"""+ingredients_string+"""','"""+Name_on_order+"""' )"""
+    my_insert_stmt = """insert into smoothies.public.orders(ingredients,Name_on_order)
+            values ('"""+ingredients_string+"""','"""+Name_on_order+"""')"""
 
     #For check SQL and troubleshooting
     #st.write(my_insert_stmt)
